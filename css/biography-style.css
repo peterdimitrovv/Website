@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgb(34,33,50);
+}
+
+h1{
+	text-align: center;
+	background-color: rgba(0,20,51);
+	color: white;
+}
+
+aside{
+	padding: 30px;
+}
+
+#contents{
+	position: fixed;
+	background-color: white;
+	opacity: 0.8;
+	float: left;
+	width: 20%;
+	border-radius: 20px;
+}
+
+#contents ul a{
+	color: black;
+	text-decoration: none;
+}
+
+#contents li{
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#contents li a:hover{
+	background-color:  #c2c2a3;
+}
+
+#contents ul{
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+	background-color: white;
+}
+
+.container{
+	margin: 10px;
+	padding: 10px;
+	float: right;
+	width: 75%;
+	border-radius: 20px;
+}
+
+article{
+	background-color: white;
+	opacity: 0.9;
+	margin: 10px;
+	padding: 20px;
+	float: right;
+	width: 75%;
+	border-radius: 20px;
+}
+.allArticles{
+
+	background-image: none;
+	background-color: rgba(0,20,51);
+	border-radius: 5px;
+	text-align: left;
+	color: white;
+	font-size: 35px;
+}
+
+div:first-of-type:first-letter{
+	font-size:3em;
+	font-style: italic;
+	font-style: bold;
+	text-transform: uppercase;
+}
+footer{
+	float: left;
+	width: 100%;
+	background-color: rgba(0,20,51);
+	text-align: center;
+	color: white;
+}
+
+@media only screen and (max-width: 1250px){
+  aside, #contents nav{
+  	width: 90%;
+  }
+}
+@media only screen and (max-width: 850px){
+  aside{
+  	display: none;
+  }
+  article{
+ 	float: left;
+
+ }
+ section{
+ 	padding-left: 20%;
+ }
+ .container{
+ 	width: 82%;
+ 	float: left;
+ 	padding-left: 20%;
+ }
+ .allArticles{
+ 	font-size: 1.5em;
+ }
+}
